@@ -2,7 +2,7 @@ package Array;
 
 public class MaxSubArrayKadane {
     public static void main(String[] args) {
-        int arr[] = {1,-2,3,4,5};
+        int arr[] = {100,0,-101,300,-4,-5};
         System.out.println(MaxSum(arr));
     }
 
