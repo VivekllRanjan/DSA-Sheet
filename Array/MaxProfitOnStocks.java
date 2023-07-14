@@ -9,7 +9,7 @@ public class MaxProfitOnStocks {
     public static int maxProfit(int[] prices) {
         int maxProfit = 0;
         int minCost = prices[0];
-        int cost;
+        //int cost;
         for(int i=1;i<prices.length;i++){
             minCost = Math.min(prices[i],minCost);
             int profit = prices[i] - minCost;

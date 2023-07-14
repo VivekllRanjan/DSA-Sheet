@@ -49,7 +49,6 @@ public class LLPallin {
         if(head == null || head.next == null)
             return true;
 
-        int mid;
 
         ListNode middle = firstMiddle(head); // returns first half end
         ListNode secondHalfStart = reverse(middle.next);
