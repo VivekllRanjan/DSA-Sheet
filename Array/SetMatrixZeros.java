@@ -1,4 +1,4 @@
-package DSA;
+package Array;
 
 public class SetMatrixZeros {
 
