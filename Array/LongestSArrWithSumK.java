@@ -61,7 +61,7 @@ public class LongestSArrWithSumK {
 
     public static void main(String[] args) {
         int[] a = {2, 3, 5, 1, 9};
-        long k = 10;
+        int k = 10;
         int len = longestSubArrayHashing(a, k);
         System.out.println("The length of the longest subarray is: " + len);
 
