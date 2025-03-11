@@ -26,7 +26,7 @@ public class RearragePosNegAlternate {
     }
     public static int[] rearrangeArrayOptimal(int[] arr){
         int pos=0,neg=1;
-        ArrayList<Integer> ans = new ArrayList<>();
+        ArrayList<Integer> ans = new ArrayList<>(Collections.nCopies(arr.length,0));
 
         for(int i=0;i<arr.length;i++){
             if(arr[i]>0){
