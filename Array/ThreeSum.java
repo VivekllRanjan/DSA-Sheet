@@ -9,7 +9,7 @@ public class ThreeSum {
         int[] arr = {-1,0,1,2,-1,-4};
         List<List<Integer>> res;
         res = threeSum(arr);
-        System.out.println(res);
+        System.out.println(res); //Updated
     }
     public static List<List<Integer>> threeSum(int[] nums) {
 
