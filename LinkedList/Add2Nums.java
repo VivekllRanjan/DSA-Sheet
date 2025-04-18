@@ -4,15 +4,15 @@ public class Add2Nums {
 
     public class ListNode {
         int val;
-        OddEvenLL.ListNode next;
+        ListNode next;
         ListNode() {}
         ListNode(int val) { this.val = val; }
-        ListNode(int val, OddEvenLL.ListNode next) { this.val = val; this.next = next; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
-    public OddEvenLL.ListNode addTwoNumbers(OddEvenLL.ListNode t1, OddEvenLL.ListNode t2) {
-        OddEvenLL.ListNode dummy = new ListNode(-1);
-        OddEvenLL.ListNode curr = dummy;
+    public ListNode addTwoNumbers(OddEvenLL.ListNode t1, OddEvenLL.ListNode t2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode curr = dummy;
         int carry = 0;
         while(t1 != null || t2 != null){
             int sum = 0;
@@ -27,7 +27,7 @@ public class Add2Nums {
 
             sum += carry;
             carry = sum / 10;
-            OddEvenLL.ListNode newNode = new ListNode(sum % 10);
+            ListNode newNode = new ListNode(sum % 10);
             curr.next = newNode;
             curr = curr.next;
         }
