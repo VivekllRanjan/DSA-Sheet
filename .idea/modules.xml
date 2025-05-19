@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DSASolutions.iml" filepath="$PROJECT_DIR$/DSASolutions.iml" />
       <module fileurl="file://$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" filepath="$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Misc/Misc.iml" filepath="$PROJECT_DIR$/Misc/Misc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Stacks/Stacks.iml" filepath="$PROJECT_DIR$/Stacks/Stacks.iml" />
     </modules>
   </component>
 </project>
