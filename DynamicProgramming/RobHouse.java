@@ -32,7 +32,7 @@ public class RobHouse {
 
         for(int i = 2; i<n; i++) {
 
-            int pick = house[i] + prev2;
+                int pick = house[i] + prev2;
             int skip = prev1;
 
             int curr = Math.max(pick, skip);
