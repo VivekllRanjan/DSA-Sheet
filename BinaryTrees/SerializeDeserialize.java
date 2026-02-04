@@ -1,18 +1,20 @@
-package BTrees;
+package BinaryTrees;
+
+import BTrees.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class SerializeDeserialize {
-    public String serialize(TreeNode root) {
+    public String serialize(BTrees.TreeNode root) {
         if (root == null) return "";
 
         StringBuilder sb = new StringBuilder();
-        Queue<TreeNode> q = new LinkedList<>();
+        Queue<BTrees.TreeNode> q = new LinkedList<>();
         q.offer(root);
 
         while (!q.isEmpty()) {
-            TreeNode node = q.poll();
+            BTrees.TreeNode node = q.poll();
 
             if (node == null) {
                 sb.append("null,");
@@ -28,21 +30,21 @@ public class SerializeDeserialize {
     }
 
     // Decodes your encoded data to tree.
-    public TreeNode deserialize(String data) {
+    public BTrees.TreeNode deserialize(String data) {
         if (data == null || data.length() == 0) return null;
 
         String[] nodes = data.split(",");
-        TreeNode root = new TreeNode(Integer.parseInt(nodes[0]));
+        BTrees.TreeNode root = new BTrees.TreeNode(Integer.parseInt(nodes[0]));
 
-        Queue<TreeNode> q = new LinkedList<>();
+        Queue<BTrees.TreeNode> q = new LinkedList<>();
         q.offer(root);
 
         int i = 1;
         while (!q.isEmpty()) {
-            TreeNode curr = q.poll();
+            BTrees.TreeNode curr = q.poll();
 
             if (!nodes[i].equals("null")) {
-                curr.left = new TreeNode(Integer.parseInt(nodes[i]));
+                curr.left = new BTrees.TreeNode(Integer.parseInt(nodes[i]));
                 q.offer(curr.left);
             }
             i++;

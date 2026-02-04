@@ -1,21 +1,23 @@
-package BTrees;
+package BinaryTrees;
+
+import BTrees.TreeNode;
 
 import java.util.*;
 
 public class NodesAtDistanceK {
     private List<Integer> nodes = new ArrayList<>();
-    private Map<TreeNode, TreeNode> parent = new HashMap<>();
-    private Set<TreeNode> visited = new HashSet<>();
+    private Map<BTrees.TreeNode, BTrees.TreeNode> parent = new HashMap<>();
+    private Set<BTrees.TreeNode> visited = new HashSet<>();
 
-    public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
+    public List<Integer> distanceK(BTrees.TreeNode root, BTrees.TreeNode target, int k) {
 
         if(root == null) return nodes;
 
-        Queue<TreeNode> q = new LinkedList<>();
+        Queue<BTrees.TreeNode> q = new LinkedList<>();
         q.offer(root);
 
         while(!q.isEmpty()) {
-            TreeNode curr = q.poll();
+            BTrees.TreeNode curr = q.poll();
 
             if(curr.left != null) {
                 q.offer(curr.left);

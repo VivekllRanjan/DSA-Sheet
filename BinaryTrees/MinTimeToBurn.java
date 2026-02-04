@@ -1,4 +1,6 @@
-package BTrees;
+package BinaryTrees;
+
+import BTrees.TreeNode;
 
 import java.util.*;
 
@@ -20,15 +22,15 @@ public class MinTimeToBurn {
      */
     class Solution {
 
-        public int amountOfTime(TreeNode root, int start) {
-            Map<TreeNode, TreeNode> parent = new HashMap<>();
-            Queue<TreeNode> q = new LinkedList<>();
+        public int amountOfTime(BTrees.TreeNode root, int start) {
+            Map<BTrees.TreeNode, BTrees.TreeNode> parent = new HashMap<>();
+            Queue<BTrees.TreeNode> q = new LinkedList<>();
 
             q.offer(root);
-            TreeNode target = null;
+            BTrees.TreeNode target = null;
 
             while(!q.isEmpty()) {
-                TreeNode curr = q.poll();
+                BTrees.TreeNode curr = q.poll();
 
                 if(curr.val == start) target = curr;
 
@@ -44,7 +46,7 @@ public class MinTimeToBurn {
             }
 
 
-            Set<TreeNode> visited = new HashSet<>();
+            Set<BTrees.TreeNode> visited = new HashSet<>();
             q.offer(target);
             visited.add(target);
 

@@ -1,7 +1,9 @@
-package BTrees;
+package BinaryTrees;
+
+import BTrees.TreeNode;
 
 public class LCA {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    public BTrees.TreeNode lowestCommonAncestor(BTrees.TreeNode root, BTrees.TreeNode p, BTrees.TreeNode q) {
         if(root == null || p == null || q == null) {
             return null;
         }
@@ -16,10 +18,10 @@ public class LCA {
         }
     }
 
-    public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q) {
+    public BTrees.TreeNode lowestCommonAncestor2(BTrees.TreeNode root, BTrees.TreeNode p, BTrees.TreeNode q) {
         if(root == null || root == p || root == q) return root;
 
-        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        BTrees.TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
 
         if(left != null && right != null) return root;

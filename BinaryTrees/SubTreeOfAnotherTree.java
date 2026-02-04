@@ -1,4 +1,4 @@
-package BTrees;
+package BinaryTrees;
 
 public class SubTreeOfAnotherTree {
 

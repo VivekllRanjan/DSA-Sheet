@@ -1,6 +1,4 @@
-package BTrees;
-
-import BinaryTrees.TreeNode;
+package BinaryTrees;
 
 public class InvertTree {
     public TreeNode invertTree(TreeNode node) {

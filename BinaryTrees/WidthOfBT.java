@@ -1,18 +1,20 @@
-package BTrees;
+package BinaryTrees;
+
+import BTrees.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class WidthOfBT {
     class Pair {
-        TreeNode node;
+        BTrees.TreeNode node;
         int index;
-        Pair(TreeNode node, int index) {
+        Pair(BTrees.TreeNode node, int index) {
             this.node = node;
             this.index = index;
         }
     }
-    public int widthOfBinaryTree(TreeNode root) {
+    public int widthOfBinaryTree(BTrees.TreeNode root) {
         int maxWidth = 0;
         if(root == null) return maxWidth;
 

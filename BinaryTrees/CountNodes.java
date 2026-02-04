@@ -1,7 +1,9 @@
-package BTrees;
+package BinaryTrees;
+
+import BTrees.TreeNode;
 
 public class CountNodes {
-    public int countNodes(TreeNode root) {
+    public int countNodes(BTrees.TreeNode root) {
         if(root == null) return 0;
 
         int lt = heightLeft(root);
@@ -12,7 +14,7 @@ public class CountNodes {
         return 1 + countNodes(root.left) + countNodes(root.right);
     }
 
-    private int heightLeft(TreeNode node) {
+    private int heightLeft(BTrees.TreeNode node) {
         int c = 0;
         while(node != null) {
             node = node.left;

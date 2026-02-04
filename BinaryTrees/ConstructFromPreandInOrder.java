@@ -1,4 +1,4 @@
-package BTrees;
+package BinaryTrees;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,7 @@ public class ConstructFromPreandInOrder {
         return build(preorder, 0, inorder.length - 1);
     }
 
-    private TreeNode build(int[] preorder, int inStart, int inEnd) {
+    public TreeNode build(int[] preorder, int inStart, int inEnd) {
         if (inStart > inEnd) return null;
 
         int rootVal = preorder[preIndex++];
